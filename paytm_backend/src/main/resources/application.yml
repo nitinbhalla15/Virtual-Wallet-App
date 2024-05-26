@@ -1,0 +1,21 @@
+#############################################SPRING DB PROPERTIES############################
+spring:
+  application:
+    name: paytm
+  datasource:
+    url: #Enter the data source url
+    username: #Enter the postgres username
+    password: #Enter the postgres password
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#############################################SERVER CONFIG############################
+server:
+  port: #Enter the port on which you want to run the application
+#############################################JWT SECRET###############################
+jwt:
+  secret: #Enter the secret key with which you want to sign the JWT
+
