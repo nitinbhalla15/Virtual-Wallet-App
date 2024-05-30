@@ -1,1 +1,1 @@
-# Virtual Wallet Application
+# Virtual Wallet Application (Frontend)

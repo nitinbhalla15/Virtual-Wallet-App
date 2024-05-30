@@ -18,6 +18,7 @@ export default function Signup() {
         password: ""
     }
     const setUserDetails = useSetRecoilState(UserDetailAtom)
+    // const setIsUserAuthenticated = useSetRecoilState(IsUserAuthenticatedAtom)
 
     return (
         <div>
@@ -55,6 +56,8 @@ export default function Signup() {
                             console.log("Response : ", response);
                             if (response.message == "SUCCESS") {
                                 setUserDetails(response.user_info);
+                                // setIsUserAuthenticated(true)
+                                window.localStorage.setItem("isAuth","true");
                                 localStorage.setItem("token", response.token)
                                 navigate("/dashboard")
                             }
